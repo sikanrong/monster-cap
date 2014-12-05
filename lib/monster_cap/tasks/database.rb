@@ -1,5 +1,4 @@
 require 'tempfile'
-require 'pry'
 namespace :db do
   desc 'Pull the remote database to your local database'
   task :pull do
