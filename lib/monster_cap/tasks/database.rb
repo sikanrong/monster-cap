@@ -20,6 +20,7 @@ namespace :db do
         fh.close
         download! remote_file, fh.path
         info "Importing database..."
+        info "bzip2 -cd #{fh.path} | psql -U #{local_database['username']} -d #{local_database['database']}"
         system "bzip2 -cd #{fh.path} | psql -U #{local_database['username']} -d #{local_database['database']}"
         fh.unlink
         execute "rm #{remote_file}"
