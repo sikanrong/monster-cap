@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = "monster-cap"
   s.version     = MonsterCap::VERSION
   s.authors     = ['Monsterbox Productions']
-  s.email       = ['tye@monsterboxpro.com']
+  s.email       = ['andrew@monsterboxpro.com']
   s.homepage    = 'http://monsterboxpro.com'
   s.summary     = 'monsterbox capistrano tasks'
   s.description = 'monsterbox capistrano tasks'
@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.files = Dir["{lib}/**/*", "MIT-LICENSE"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2"
+  s.add_dependency "rails", ">= 4.1.5"
 end
